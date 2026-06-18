@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Motors | Premium Car E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            APEX<span>MOTORS</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+        </nav>
+        <div class="nav-icons">
+            <div class="cart-icon" id="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>DRIVE THE <span>FUTURE</span></h1>
+            <p>Experience the perfect blend of luxury, power, and electric performance with our premium collection.</p>
+            <a href="#collection" class="btn">Explore Fleet</a>
+        </div>
+    </section>
+
+    <section id="collection" class="collection">
+        <h2 class="section-title">Our Premium <span>Collection</span></h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Cars</button>
+            <button class="filter-btn" data-filter="hypercar">Hypercars</button>
+            <button class="filter-btn" data-filter="suv">EV SUVs</button>
+            <button class="filter-btn" data-filter="sports">Sports Cars</button>
+        </div>
+
+        <div class="car-grid" id="car-container">
+            </div>
+    </section>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your <span>Garage</span></h3>
+            <i class="fas fa-times" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Your garage is empty!</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">Total: <span id="cart-total">$0</span></div>
+            <button class="checkout-btn" onclick="alert('Order Placed Successfully! Your supercar is on the way.')">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Apex Motors. Designed for College Project Base.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
